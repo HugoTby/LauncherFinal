@@ -92,18 +92,18 @@
     {
 
 
-    if ($login == "Administrateur" and $password == "wvbt5qry88aijh3kgu22")
+    if (($login == "Administrateur" && $password == "wvbt5qry88aijh3kgu22") ||  $login == "Administrateur2"  && $password == "1234")
     {
         header("location: acceuil.html");
         //Si réussite renvoyer vers -> acceuil.php
     }
 
-    elseif ($login != "Administrateur")
+    elseif ($login != "Administrateur" || $login != "Administrateur2")
     {
         //Si echec renvoyer :
         echo "<p style='color:purple;'>L'Username entré est incorrect.</p>";
     }
-    elseif ($password != "wvbt5qry88aijh3kgu22")
+    elseif ($password != "wvbt5qry88aijh3kgu22" || $password != "1234")
     {
         //Si echec renvoyer :
         echo "<p style='color:purple;'>Le password est incorrect.</p>";
