@@ -43,7 +43,7 @@ var swiper = new Swiper(".trending-content", {
     },
   });
 
-// Custom scroll bar js haut écran
+// Custom scroll bar js  
 window.onscroll = function() {mufunction()};
 
 function mufunction(){
